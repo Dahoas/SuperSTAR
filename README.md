@@ -14,12 +14,12 @@ This repo houses experimental code for SuperSTAR.
 
 # Infrastructure
 
-Training framework TBD:
-- Axolotl
-- trlX
-- custom HF script
-
-Eval framework TBD:
-- MATH
-- lm-eval-harness?
-- MTBench? Other instruction following benchmarks?
+Training: Huggingface trainer
+Inference: [vllm](https://github.com/vllm-project/vllm)
+Evaluation: 
+- MATH dataset (use EleutherAI eval harness?, If this doesn't work I also have my own custom eval code)
+- What are some popular benchmarks for RLHF evaluation
+  - MTbench?
+  - LLMArena?
+  - AlpacaFarm?
+  - ???
